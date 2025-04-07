@@ -1,0 +1,82 @@
+mess = [[
+
+We found some suspect script that you executed.
+]]
+
+spawn( function()
+    game:GetService("CoreGui"):WaitForChild("DevConsoleMaster"):Destroy()
+end)
+
+spawn( function()
+    for asdr,ergasd in pairs(game:GetService("CoreGui"):GetDescendants()) do
+        if ergasd:IsA("TextLabel") or ergasd:IsA("TextButton") then
+            if ergasd.Text == "Explorer" or ergasd.Text == "Dex" or ergasd.Text == "Remote Spy" or ergasd.Text == "SimpleSpy" or ergasd.Text == "Copy Code" or ergasd.Text:sub(0,9) == "Copy Code" or ergasd.Text:sub(0,6) == "Remote" or ergasd.Text:sub(0,6) == "Copy Remote" or ergasd.Text:sub(0,4) == "Octo" or ergasd.Text:sub(0,6) == "SanTer" or ergasd.Text:sub(0,6) == "REMOTE" then
+                if ergasd.Parent.Name == "ChatBubbleFrame" == false then
+                    spawn( function()
+                        game.Players.LocalPlayer:Kick(mess)
+                    end)
+                    wait(0.25)
+                    spawn( function()
+                        game:Shutdown()
+                    end)
+                    wait(1.25)
+                    spawn( function()
+                        while true do end
+                    end)
+                    wait(0.2)
+                    spawn( function()
+                        game.Players.LocalPlayer:Destroy()
+                    end)
+                end
+            end
+        end
+    end
+end)
+
+local function wevzaaass(wssszaasd)
+        if wssszaasd:IsA("TextLabel") or wssszaasd:IsA("TextButton") then
+            if wssszaasd.Text == "Explorer" or wssszaasd.Text == "Dex" or wssszaasd.Text == "Remote Spy" or wssszaasd.Text == "SimpleSpy" or wssszaasd.Text == "Copy Code" or wssszaasd.Text:sub(0,9) == "Copy Code" or wssszaasd.Text:sub(0,6) == "Remote" or wssszaasd.Text:sub(0,6) == "Copy Remote" or wssszaasd.Text:sub(0,4) == "Octo" or wssszaasd.Text:sub(0,6) == "SanTer" or wssszaasd.Text:sub(0,6) == "REMOTE" or wssszaasd.Text:sub(0,8) == "Clear Code" or wssszaasd.Text:sub(0,8) == "Clear Logs" or wssszaasd.Text:sub(0,8) == "CLEAR LOGS" then
+                if wssszaasd.Parent.Name == "ChatBubbleFrame" == false then
+                    spawn( function()
+                        game.Players.LocalPlayer:Kick(mess)
+                    end)
+                    wait(0.25)
+                    spawn( function()
+                        game:Shutdown()
+                    end)
+                    wait(1.25)
+                    spawn( function()
+                        while true do end
+                    end)
+                    wait(0.2)
+                    spawn( function()
+                        game.Players.LocalPlayer:Destroy()
+                    end)
+                end
+            end
+        end
+        if wssszaasd:IsA("Frame") and wssszaasd.Text == "FunctionTemplate" and wssszaasd.Parent.Name == "ScrollingFrame" then
+            spawn( function()
+                game.Players.LocalPlayer:Kick(mess)
+            end)
+            wait(0.25)
+            spawn( function()
+                game:Shutdown()
+            end)
+            wait(1.25)
+            spawn( function()
+                while true do end
+            end)
+            wait(0.2)
+            spawn( function()
+                game.Players.LocalPlayer:Destroy()
+            end)
+        end
+end
+
+
+    game:GetService("CoreGui").DescendantAdded:Connect(
+        function(wssszaasd)
+            wevzaaass(wssszaasd)
+        end
+    )
