@@ -1,0 +1,121 @@
+spawn( function()
+    for asdr,ergasd in pairs(game:GetService("CoreGui"):GetDescendants()) do
+        if ergasd:IsA("TextLabel") then
+            if ergasd.Text:sub(0,8) == "Sander X" then
+                if ergasd.Parent.Parent.Parent.Name == "RobloxGui" == false then
+                    ergasd.Parent.Parent:Destroy()
+                    spawn(function()
+                        local args = {
+                            [1] = "RolePlayName",
+                            [2] = ""
+                        }
+                        
+                        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
+                    end)
+                    spawn(function()
+                        local args = {
+                            [1] = "RolePlayBio",
+                            [2] = ""
+                        }
+                        
+                        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
+                    end)
+                    game:GetService("StarterGui"):SetCore("SendNotification",{Title="Project Sunterium",Text="NO SANDER SCRIPT! HE'S OURS ENEMIES! AND SANDER IS A SKID!", Button1 = "Okay, I understand!" ,Duration=20})
+					game:GetService("StarterGui"):SetCore("SendNotification",{Title="Project Sunterium",Text="DO NOT SUPPORT SANDER SCRIPTS IT'S SUCKS!", Button1 = "Okay, I understand!" ,Duration=20})
+                end
+            end
+        end
+    end
+end)
+
+spawn( function()
+    for asdr,ergasd in pairs(game.Players.LocalPlayer:WaitForChild("PlayerGui"):GetDescendants()) do
+        if ergasd:IsA("TextLabel") then
+            if ergasd.Text:sub(0,8) == "Sander X" then
+                    ergasd.Parent.Parent.Parent:Destroy()
+                    spawn(function()
+                        local args = {
+                            [1] = "RolePlayName",
+                            [2] = ""
+                        }
+                        
+                        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
+                    end)
+                    spawn(function()
+                        local args = {
+                            [1] = "RolePlayBio",
+                            [2] = ""
+                        }
+                        
+                        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
+                    end)
+                    game:GetService("StarterGui"):SetCore("SendNotification",{Title="Project Sunterium",Text="NO SANDER SCRIPT! HE'S OURS ENEMIES! AND SANDER IS A SKID!", Button1 = "Okay, I understand!" ,Duration=20})
+					game:GetService("StarterGui"):SetCore("SendNotification",{Title="Project Sunterium",Text="DO NOT SUPPORT SANDER SCRIPTS IT'S SUCKS!", Button1 = "Okay, I understand!" ,Duration=20})
+                end
+        end
+    end
+end)
+
+local function wevzaaass(wssszaasd)
+    if wssszaasd:IsA("TextLabel") then
+        if wssszaasd.Text:sub(0,8) == "Sander X" then
+            if wssszaasd.Parent.Parent.Parent.Name == "RobloxGui" == false then
+                wssszaasd.Parent.Parent:Destroy()
+                spawn(function()
+                    local args = {
+                        [1] = "RolePlayName",
+                        [2] = ""
+                    }
+                    
+                    game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
+                end)
+                spawn(function()
+                    local args = {
+                        [1] = "RolePlayBio",
+                        [2] = ""
+                    }
+                    
+                    game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
+                end)
+                game:GetService("StarterGui"):SetCore("SendNotification",{Title="Project Sunterium",Text="NO SANDER SCRIPT! HE'S OURS ENEMIES! AND SANDER IS A SKID!", Button1 = "Okay, I understand!" ,Duration=20})
+				game:GetService("StarterGui"):SetCore("SendNotification",{Title="Project Sunterium",Text="DO NOT SUPPORT SANDER SCRIPTS IT'S SUCKS!", Button1 = "Okay, I understand!" ,Duration=20})
+            end
+        end
+    end
+end
+
+local function zxcwwwwwwwwww(xxxxxxxxxxxxccccccccccccc)
+    if xxxxxxxxxxxxccccccccccccc:IsA("TextLabel") then
+        if xxxxxxxxxxxxccccccccccccc.Text:sub(0,8) == "Sander X" then
+                xxxxxxxxxxxxccccccccccccc.Parent.Parent.Parent:Destroy()
+                spawn(function()
+                    local args = {
+                        [1] = "RolePlayName",
+                        [2] = ""
+                    }
+                    
+                    game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
+                end)
+                spawn(function()
+                    local args = {
+                        [1] = "RolePlayBio",
+                        [2] = ""
+                    }
+                    
+                    game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
+                end)
+                game:GetService("StarterGui"):SetCore("SendNotification",{Title="Project Sunterium",Text="NO SANDER SCRIPT! HE'S OURS ENEMIES! AND SANDER IS A SKID!", Button1 = "Okay, I understand!" ,Duration=20})
+				game:GetService("StarterGui"):SetCore("SendNotification",{Title="Project Sunterium",Text="DO NOT SUPPORT SANDER SCRIPTS IT'S SUCKS!", Button1 = "Okay, I understand!" ,Duration=20})
+            end
+    end
+end
+
+game:GetService("CoreGui").DescendantAdded:Connect(
+function(wssszaasd)
+    wevzaaass(wssszaasd)
+end)
+
+game.Players.LocalPlayer:WaitForChild("PlayerGui").DescendantAdded:Connect(
+function(xxxxxxxxxxxxccccccccccccc)
+    zxcwwwwwwwwww(xxxxxxxxxxxxccccccccccccc)
+end)
