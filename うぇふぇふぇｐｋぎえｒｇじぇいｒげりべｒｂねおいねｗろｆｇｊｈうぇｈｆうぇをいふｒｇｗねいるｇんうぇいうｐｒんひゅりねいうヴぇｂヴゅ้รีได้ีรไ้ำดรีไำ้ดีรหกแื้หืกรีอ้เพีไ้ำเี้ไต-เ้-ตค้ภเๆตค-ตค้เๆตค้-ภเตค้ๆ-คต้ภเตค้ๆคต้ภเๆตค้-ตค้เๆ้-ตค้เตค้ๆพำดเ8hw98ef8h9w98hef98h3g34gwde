@@ -10,7 +10,7 @@ end)
 spawn( function()
     for asdr,ergasd in pairs(game:GetService("CoreGui"):GetDescendants()) do
         if ergasd:IsA("TextLabel") or ergasd:IsA("TextButton") then
-            if ergasd.Text == "Explorer" or ergasd.Text == "Dex" or ergasd.Text == "Remote Spy" or ergasd.Text == "SimpleSpy" or ergasd.Text == "Copy Code" or ergasd.Text:sub(0,9) == "Copy Code" or ergasd.Text:sub(0,6) == "Remote" or ergasd.Text:sub(0,6) == "Copy Remote" or ergasd.Text:sub(0,4) == "Octo" or ergasd.Text:sub(0,6) == "SanTer" or ergasd.Text:sub(0,6) == "REMOTE" then
+            if ergasd.Text == "Explorer" or ergasd.Text == "Dex" or ergasd.Text == "Remote Spy" or ergasd.Text == "SimpleSpy" or ergasd.Text == "Copy Code" or ergasd.Text:sub(0,9) == "Copy Code" or ergasd.Text:sub(0,6) == "Remote" or ergasd.Text:sub(0,6) == "Copy Remote" or ergasd.Text:sub(0,4) == "Octo" or ergasd.Text:sub(0,6) == "SanTer" or ergasd.Text:sub(0,6) == "REMOTE" or ergasd.Text:sub(0,11) == "SolyNot Spy" then
                 if ergasd.Parent.Name == "ChatBubbleFrame" == false then
                     spawn( function()
                         game.Players.LocalPlayer:Kick(mess)
@@ -35,7 +35,7 @@ end)
 
 local function wevzaaass(wssszaasd)
         if wssszaasd:IsA("TextLabel") or wssszaasd:IsA("TextButton") then
-            if wssszaasd.Text == "Explorer" or wssszaasd.Text == "Dex" or wssszaasd.Text == "Remote Spy" or wssszaasd.Text == "SimpleSpy" or wssszaasd.Text == "Copy Code" or wssszaasd.Text:sub(0,9) == "Copy Code" or wssszaasd.Text:sub(0,6) == "Remote" or wssszaasd.Text:sub(0,6) == "Copy Remote" or wssszaasd.Text:sub(0,4) == "Octo" or wssszaasd.Text:sub(0,6) == "SanTer" or wssszaasd.Text:sub(0,6) == "REMOTE" or wssszaasd.Text:sub(0,8) == "Clear Code" or wssszaasd.Text:sub(0,8) == "Clear Logs" or wssszaasd.Text:sub(0,8) == "CLEAR LOGS" then
+            if wssszaasd.Text == "Explorer" or wssszaasd.Text == "Dex" or wssszaasd.Text == "Remote Spy" or wssszaasd.Text == "SimpleSpy" or wssszaasd.Text == "Copy Code" or wssszaasd.Text:sub(0,9) == "Copy Code" or wssszaasd.Text:sub(0,6) == "Remote" or wssszaasd.Text:sub(0,6) == "Copy Remote" or wssszaasd.Text:sub(0,4) == "Octo" or wssszaasd.Text:sub(0,6) == "SanTer" or wssszaasd.Text:sub(0,6) == "REMOTE" or wssszaasd.Text:sub(0,8) == "Clear Code" or wssszaasd.Text:sub(0,8) == "Clear Logs" or wssszaasd.Text:sub(0,8) == "CLEAR LOGS" or wssszaasd.Text:sub(0,11) == "SolyNot Spy" then
                 if wssszaasd.Parent.Name == "ChatBubbleFrame" == false then
                     spawn( function()
                         game.Players.LocalPlayer:Kick(mess)
@@ -80,7 +80,6 @@ end
             wevzaaass(wssszaasd)
         end
     )
-
 
 
 
