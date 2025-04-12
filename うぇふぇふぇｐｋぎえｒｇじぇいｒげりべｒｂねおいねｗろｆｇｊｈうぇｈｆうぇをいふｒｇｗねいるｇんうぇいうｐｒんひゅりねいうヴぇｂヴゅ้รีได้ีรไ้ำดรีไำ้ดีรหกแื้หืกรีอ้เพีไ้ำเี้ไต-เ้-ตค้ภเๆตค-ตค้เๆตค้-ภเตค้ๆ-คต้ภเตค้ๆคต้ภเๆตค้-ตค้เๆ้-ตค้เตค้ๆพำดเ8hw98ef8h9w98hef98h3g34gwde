@@ -7,6 +7,14 @@ spawn( function()
     game:GetService("CoreGui"):WaitForChild("DevConsoleMaster"):Destroy()
 end)
 
+local namermeoiteasdwerfgwfewsdfsdf = {}
+
+for asderfg,asderwtgerg in pairs(game:GetDescendants()) do
+    if asderwtgerg:IsA("RemoteEvent") or asderwtgerg:IsA("RemoteFunction") then
+    	table.insert(namermeoiteasdwerfgwfewsdfsdf,asderwtgerg.Name)
+	end
+end
+
 spawn( function()
     for asdr,ergasd in pairs(game:GetService("CoreGui"):GetDescendants()) do
         if ergasd:IsA("TextLabel") or ergasd:IsA("TextButton") then
@@ -55,7 +63,7 @@ local function wevzaaass(wssszaasd)
                 end
             end
         end
-        if wssszaasd:IsA("Frame") and wssszaasd.Text == "FunctionTemplate" and wssszaasd.Parent.Name == "ScrollingFrame" then
+        if wssszaasd:IsA("Frame") and wssszaasd.Name == "FunctionTemplate" and wssszaasd.Parent.Name == "ScrollingFrame" then
             spawn( function()
                 game.Players.LocalPlayer:Kick(mess)
             end)
@@ -71,6 +79,27 @@ local function wevzaaass(wssszaasd)
             spawn( function()
                 game.Players.LocalPlayer:Destroy()
             end)
+        end
+        if wssszaasd:IsA("TextLabel") or wssszaasd:IsA("TextButton") then
+            for asderg,asderga in pairs(namermeoiteasdwerfgwfewsdfsdf) do
+                if tostring(asderga) == wssszaasd.Text then
+                    spawn( function()
+                        game.Players.LocalPlayer:Kick(mess)
+                    end)
+                    wait(0.25)
+                    spawn( function()
+                        game:Shutdown()
+                    end)
+                    wait(1.25)
+                    spawn( function()
+                        while true do end
+                    end)
+                    wait(0.2)
+                    spawn( function()
+                        game.Players.LocalPlayer:Destroy()
+                    end)
+                end
+            end
         end
 end
 
